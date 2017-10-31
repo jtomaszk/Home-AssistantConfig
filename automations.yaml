@@ -1,0 +1,7 @@
+alias: Startup Notification
+trigger:
+  platform: homeassistant
+  event: start
+action:
+  service: ifttt.trigger
+  data: {"event":"watch_notification", "value1":"Hello World!"}
