@@ -24,9 +24,9 @@ config:
 
 http:
   # Secrets are defined in the file secrets.yaml
-  # api_password: !secret http_password
+  api_password: !secret http_password
   # Uncomment this if you are using SSL/TLS, running in Docker container, etc.
-  # base_url: example.duckdns.org:8123
+  base_url: rp0w.local:8123
 
 # Checks for available updates
 # Note: This component will send some information about your system to
@@ -70,34 +70,35 @@ switch:
   - platform: broadlink  
     host: !secret rm2_host
     mac: !secret rm2_mac
+    timeout: 15
     fiendly_name: RM2
+    switches: 
+      tv_lg:
+        friendly_name: "LG TV"
+        command_on: 'JgBQAAABK5AVEBQRFDUVEBQRFBEUEBUQFDYUNRQRFDUUNhQ1FDYUNRQRFBEUEBU1FBEUEBUQFBEUNRQ2FDUUERQ1FTUUNRQ2FAAFIAABKkgTAA0FAAAAAAAAAAA='
+        command_off: ''
+      screen:
+        command_on: 'eDYyABcHFwcXBxcHCRYXCAgWFwcJFgkWFwcXCAgWFwcXCAgWCRYXCAgWFwcIFhcHCBYJFgjjAAAAAAAA'
+        command_off: 'eFYyAAkWCRYYCAkWGAcJFgkWFwgJFgnjGAcXCBcHFwgJFhgHCRYYBwkWCRYXCBcHCRYXBxgHAAAAAAAA'
 
 media_player:
   - platform: lg_netcast
     host: !secret lg_host
+    access_token: !secret lg_token
   - platform: pioneer
     host: !secret pioneer_host
   - platform: spotify
     client_id: !secret spotify_client_id
     client_secret: !secret spotify_client_secret
-
+  
 sensor:
   - platform: yr
     name: Weather
     forecast: 24
-    monitored_conditions:
+    monitored_conditions:  
       - temperature
       - symbol
-      - precipitation
-      - windSpeed
-      - pressure
-      - windDirection
       - humidity
-      - fog
-      - cloudiness
-      - lowClouds
-      - mediumClouds
-      - highClouds
       - dewpointTemperature
   - platform: broadlink
     host: !secret a1_host
@@ -116,4 +117,5 @@ weather:
 
 device_tracker:
   - platform: bluetooth_tracker
+    track_new_devices: yes
 

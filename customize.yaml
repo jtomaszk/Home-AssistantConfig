@@ -1,0 +1,8 @@
+sensor.broadlink_sensor_humidity:
+  friendly_name: Indoor Humidity
+sensor.broadlink_sensor_air_quality:
+  friendly_name: Indoor Air Quality
+sensor.broadlink_sensor_light:
+  friendly_name: Indoor Light
+sensor.broadlink_sensor_noise:
+  friendly_name: Indoor Noise
