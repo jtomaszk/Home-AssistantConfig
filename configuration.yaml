@@ -67,19 +67,12 @@ ifttt:
   key: !secret ifttt_key
 
 switch:
-  - platform: broadlink  
+  - platform: broadlink
     host: !secret rm2_host
     mac: !secret rm2_mac
     timeout: 15
     fiendly_name: RM2
-    switches: 
-      tv_lg:
-        friendly_name: "LG TV"
-        command_on: 'JgBQAAABK5AVEBQRFDUVEBQRFBEUEBUQFDYUNRQRFDUUNhQ1FDYUNRQRFBEUEBU1FBEUEBUQFBEUNRQ2FDUUERQ1FTUUNRQ2FAAFIAABKkgTAA0FAAAAAAAAAAA='
-        command_off: ''
-      screen:
-        command_on: 'eDYyABcHFwcXBxcHCRYXCAgWFwcJFgkWFwcXCAgWFwcXCAgWCRYXCAgWFwcIFhcHCBYJFgjjAAAAAAAA'
-        command_off: 'eFYyAAkWCRYYCAkWGAcJFgkWFwgJFgnjGAcXCBcHFwgJFhgHCRYYBwkWCRYXCBcHCRYXBxgHAAAAAAAA'
+    switches: !include switches.yaml
 
 media_player:
   - platform: lg_netcast
@@ -90,12 +83,12 @@ media_player:
   - platform: spotify
     client_id: !secret spotify_client_id
     client_secret: !secret spotify_client_secret
-  
+
 sensor:
   - platform: yr
     name: Weather
     forecast: 24
-    monitored_conditions:  
+    monitored_conditions:
       - temperature
       - symbol
       - humidity
@@ -105,11 +98,11 @@ sensor:
     mac: !secret a1_mac
     update_interval: 60
     monitored_conditions:
-      - 'temperature'   
-      - 'humidity'   
-      - 'air_quality'   
-      - 'light'   
-      - 'noise'   
+      - 'temperature'
+      - 'humidity'
+      - 'air_quality'
+      - 'light'
+      - 'noise'
 
 weather:
   - platform: openweathermap
@@ -118,4 +111,3 @@ weather:
 device_tracker:
   - platform: bluetooth_tracker
     track_new_devices: yes
-

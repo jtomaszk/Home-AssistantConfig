@@ -1,0 +1,19 @@
+notify_home:
+  name: Notify when someone arrives home
+  initial: off
+  icon: mdi:car
+
+switch_mediacenter:
+  name: Media center
+  initial: off
+  icon: mdi:kodi
+
+switch_cinema:
+  name: Cinema
+  initial: off
+  icon: mdi:projector
+
+switch_light_ambient:
+  name: Ambient light
+  initial: off
+  icon: mdi:lightbulb-on-outline
