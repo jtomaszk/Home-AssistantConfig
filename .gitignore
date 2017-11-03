@@ -2,6 +2,10 @@
 !*.yaml
 !.travis.yml
 !scenes
+!automation
+!automation/lights
+!automation/sensors
 !.gitignore
 secrets.yaml
 known_devices.yaml
+!.atom.cson

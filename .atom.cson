@@ -1,0 +1,7 @@
+"*":
+  'linter-js-yaml':
+    'customTags': [
+      "!secret"
+      "!include"
+      "!include_dir_*"
+    ]

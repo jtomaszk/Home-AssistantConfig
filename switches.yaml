@@ -1,7 +1,27 @@
 tv_lg:
-  friendly_name: "LG TV"
+  friendly_name: 'LG TV'
   command_on: 'JgBQAAABK5AVEBQRFDUVEBQRFBEUEBUQFDYUNRQRFDUUNhQ1FDYUNRQRFBEUEBU1FBEUEBUQFBEUNRQ2FDUUERQ1FTUUNRQ2FAAFIAABKkgTAA0FAAAAAAAAAAA='
   command_off: ''
 screen:
   command_on: 'eDYyABcHFwcXBxcHCRYXCAgWFwcJFgkWFwcXCAgWFwcXCAgWCRYXCAgWFwcIFhcHCBYJFgjjAAAAAAAA'
   command_off: 'eFYyAAkWCRYYCAkWGAcJFgkWFwgJFgnjGAcXCBcHFwgJFhgHCRYYBwkWCRYXCBcHCRYXBxgHAAAAAAAA'
+light_1_1:
+  friendly_name: 'Witryna 1'
+  command_on: ''
+  command_off: ''
+light_1_2:
+  friendly_name: 'Witryna 2'
+  command_on: ''
+  command_off: ''
+light_2_1:
+  friendly_name: 'Kinkiet'
+  command_on: ''
+  command_off: ''
+light_2_2:
+  friendly_name: 'Lampa'
+  command_on: ''
+  command_off: ''
+light_2_3:
+  friendly_name: 'Lampa 2'
+  command_on: ''
+  command_off: ''
