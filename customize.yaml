@@ -6,3 +6,5 @@ sensor.broadlink_sensor_light:
   friendly_name: Indoor Light
 sensor.broadlink_sensor_noise:
   friendly_name: Indoor Noise
+sensor.broadlink_sensor_temperature:
+  friendly_name: Indoor Temperature

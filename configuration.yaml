@@ -107,6 +107,3 @@ weather:
   - platform: openweathermap
     api_key: !secret openweathermap_api_key
 
-device_tracker:
-  - platform: bluetooth_tracker
-    track_new_devices: yes
