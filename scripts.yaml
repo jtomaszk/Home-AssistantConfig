@@ -1,0 +1,5 @@
+'1509905206761':
+  alias: Learn command
+  sequence:
+  - data: {}
+    service: broadlink.learn_command_192_168_1_6

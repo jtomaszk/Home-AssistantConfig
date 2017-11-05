@@ -1,13 +1,13 @@
-default_view:
-  view: yes
-  icon: mdi:home
+#default_view:
+#  view: yes
+#  icon: mdi:home
   # entities:
     # - group.kitchen
     # - group.awesome_people
     # - group.climate
-bedroom:
-  name: Bedroom
+    #bedroom:
+    #name: Bedroom
   # entities:
     # - switch.kitchen_pin_3
-living_room:
-  name: Living room
+    #living_room:
+        #name: Living room

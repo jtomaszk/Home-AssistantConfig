@@ -8,3 +8,8 @@ sensor.broadlink_sensor_noise:
   friendly_name: Indoor Noise
 sensor.broadlink_sensor_temperature:
   friendly_name: Indoor Temperature
+media_player.mibox3:
+  friendly_name: Mi Box
+  icon: mdi:television
+switch.lg_tv:
+  icon: mdi:television
