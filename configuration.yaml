@@ -57,26 +57,15 @@ sun:
 tts:
   - platform: google
 
+ifttt:
+  key: !secret ifttt_key
+  
 group: !include groups.yaml
 automation: !include automations.yaml
 script: !include scripts.yaml
 input_boolean: !include input_boolean.yaml
-
-ifttt:
-  key: !secret ifttt_key
-
-switch:
-  - platform: broadlink
-    host: !secret rm2_host
-    mac: !secret rm2_mac
-    timeout: 15
-    fiendly_name: RM2
-    switches: !include switches.yaml
-
+switch: !include switches.yaml
 media_player: !include media_players.yaml
 sensor: !include sensors.yaml
-
-weather:
-  - platform: openweathermap
-    api_key: !secret openweathermap_api_key
+weather: !include weather.yaml
 
