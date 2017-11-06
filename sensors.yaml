@@ -1,0 +1,22 @@
+- platform: yr
+  name: Weather
+  forecast: 24
+  monitored_conditions:
+    - temperature
+    - symbol
+    - humidity
+    - dewpointTemperature
+- platform: broadlink
+  host: !secret a1_host
+  mac: !secret a1_mac
+  update_interval: 60
+  monitored_conditions:
+    - 'temperature'
+    - 'humidity'
+    - 'air_quality'
+    - 'light'
+    - 'noise'
+- platform: waqi
+  token: !secret AQICN_API_TOKEN
+  locations:
+    - 'Poland/Mazowieckie/Warszawa/Targ%C3%B3wek'
