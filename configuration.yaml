@@ -63,7 +63,7 @@ device_tracker:
 
 ifttt:
   key: !secret ifttt_key
-  
+
 group: !include groups.yaml
 automation: !include automations.yaml
 script: !include scripts.yaml
@@ -72,8 +72,4 @@ switch: !include switches.yaml
 media_player: !include media_players.yaml
 sensor: !include sensors.yaml
 weather: !include weather.yaml
-
-scene:
-  - name: AmbienLight
-    entities:
-      switch.kinkiet: on
+scene: !include scenes.yaml

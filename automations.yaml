@@ -14,16 +14,6 @@
       entity_id:
       - switch.lampa
       - switch.kinkiet
-    service: switch.switch_on
-  alias: New Automation
-  condition: []
-  id: '1509906601659'
-  trigger: []
-- action:
-  - data:
-      entity_id:
-      - switch.lampa
-      - switch.kinkiet
     service: switch.turn_on
   alias: Ambient Light ON
   condition: []
@@ -33,37 +23,3 @@
     from: 'off'
     platform: state
     to: 'on'
-- action:
-  - data:
-      entity_id:
-      - switch.lampa
-      - switch.kinkiet
-    service: switch.turn_off
-  alias: Ambient Light OFF
-  condition: []
-  id: '1509906849562'
-  trigger:
-  - entity_id: input_boolean.switch_light_ambient
-    from: 'on'
-    platform: state
-    to: 'off'
-- action:
-  - data:
-      entity_id:
-      - switch.lampa
-      - switch.kinkiet
-    service: switch.turn_on
-  alias: New Automation
-  condition: []
-  id: '1509907042128'
-  trigger: []
-- action:
-  - data:
-      entity_id:
-      - switch.lampa
-      - switch.kinkiet
-    service: swtich.turn_on
-  alias: New Automation
-  condition: []
-  id: '1509907188090'
-  trigger: []

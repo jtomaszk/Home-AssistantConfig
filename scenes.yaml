@@ -1,0 +1,11 @@
+- name: Ambient Light
+  entities:
+    switch.kinkiet: on
+    switch.witryna_1: on
+    switch.lampa: on
+- name: Go sleep
+  entities:
+    switch.kinkiet: off
+    switch.lampa: off
+    switch.lampa_2: off
+    switch.witryna_1: off
