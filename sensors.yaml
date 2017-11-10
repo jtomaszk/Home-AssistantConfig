@@ -19,7 +19,18 @@
 - platform: waqi
   token: !secret AQICN_API_TOKEN
   locations:
-    - 'Poland/Mazowieckie/Warszawa/Targ%C3%B3wek'
+    - 'Warszawa'
+      #  stations:
+      #- 'Targowek'
 - platform: fixer
-  target: USD
-  base: PLN
+  target: PLN
+  name: USD
+  base: USD
+- platform: fixer
+  target: PLN
+  name: EUR
+  base: EUR
+- platform: fixer
+  target: PLN
+  name: CHF
+  base: CHF
