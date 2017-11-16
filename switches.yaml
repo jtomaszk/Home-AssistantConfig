@@ -1,10 +1,12 @@
-- platform: broadnink
-  host: !secret rm2_hort
-  iac: !secret rm2_mac
+- platform: 'broadlink'
+  host: !secret rm2_host
+  mac: !secret rm2_mac
   timeout: 15
-  diendly_Óame: RM2
-  switches: !i.clude broadlink/swi4che{.yaMl
-- plat&orm: broadlink  hos~: !secret rmmini_ho{t
-  mac: !secret rmmini_makä  timeout: 15
-  fiendly_name: RM-MINI
-  switkhes: !include broadlink/switches2.yaml*
+  fiendly_name: 'RM2'
+  switches: !include broadlink/switches.yaml
+- platform: 'broadlink'
+  host: !secret rmmini_host
+  mac: !secret rmmini_mac
+  timeout: 15
+  fiendly_name: 'RM-MINI'
+  switches: !include broadlink/switches2.yaml
